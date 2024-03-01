@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../components/styles/Hero.css"
 import {
   Container,
   Paper,
@@ -70,10 +71,14 @@ function Login() {
         borderRadius: "0 8px 8px 0",
       }}
     >
-      <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: "1rem" }}>
-        Welcome to <span style={{color: "black"}}>Chat Karo</span>
-      </Typography>
-      <Typography variant="h4" sx={{ fontWeight: "bold", color: "#f5f5f5" }}>
+    <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: "1rem" }}>
+      <span className="button">
+        <span class="actual-text">&nbsp;Chatnow&nbsp;
+          <span aria-hidden="true" class="hover-text">&nbsp;Chatnow&nbsp;</span>
+        </span>
+      </span>
+  </Typography>
+    <Typography variant="h4" className="main-heading">
         Connecting the world, one message at a time.
       </Typography>
     </Container>
